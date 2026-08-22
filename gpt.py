@@ -185,7 +185,7 @@ for iter in range(max_iters):
     logits, loss = model(xb, yb)
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
-    optimizer.step
+    optimizer.step()
 
 
 context = torch.zeros((1,1), dtype=torch.long, device=device)
